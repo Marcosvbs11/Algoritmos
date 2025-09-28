@@ -9,7 +9,6 @@
 <body>
   <div class="container">
 
-    <!-- Área principal -->
     <div class="hero">
       <h1>Calculadora de IMC</h1>
       <p>Informe seu peso e altura para calcular o Índice de Massa Corporal.</p>
@@ -31,7 +30,6 @@
       </div>
     </div>
 
-    <!-- Painel de resultado -->
     <div class="panel">
       <div id="resultado" class="imc-circle">--</div>
       <div id="categoria" class="cat"></div>
@@ -40,7 +38,6 @@
     </div>
   </div>
 
-  <!-- 📌 Explicação extra -->
   <div class="explicacao">
     <h2>Como funciona o cálculo do IMC?</h2>
     <p>
@@ -57,7 +54,7 @@
       <li><strong>35,0 a 39,9:</strong> Obesidade Grau II – risco alto de problemas graves.</li>
       <li><strong>40 ou mais:</strong> Obesidade Grau III – risco muito alto para a saúde.</li>
     </ul>
-    <p><em>Obs: O IMC é apenas um indicador e não substitui avaliação médica.</em></p>
+    <p><em>Obs: O IMC é apenas um indicador e não substitui avaliação médica, caso seu IMC seja de sobrepeso acima, procure um médico para ter mais informações sobre seu caso.</em></p>
   </div>
 
   <script>
@@ -76,7 +73,7 @@
       const conselho = document.getElementById("conselho");
 
       resultado.textContent = imc;
-      resultado.className = "imc-circle"; // reset classe
+      resultado.className = "imc-circle";
 
       if (imc < 18.5) {
         categoria.textContent = "Abaixo do peso";
